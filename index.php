@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app>
   <head>
     <!-- Basic Page Needs
     ================================================== -->
@@ -21,8 +21,12 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+    
+    <!-- Angular -->
+    <script src="js/angular-1.5.8/angular.min.js" type="text/javascript"></script>
 
     <!-- Slider
+    <script src="js/bootstrap.js" type="text/javascript"></script>
     ================================================== -->
     <link href="css/owl.carousel.css" rel="stylesheet" media="screen">
     <link href="css/owl.theme.css" rel="stylesheet" media="screen">
@@ -31,6 +35,8 @@
     ================================================== -->
     <link rel="stylesheet" type="text/css"  href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <!-- Angular CSS -->
+    
 
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400' rel='stylesheet' type='text/css'>
