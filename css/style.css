@@ -514,13 +514,14 @@ label {
 }
 
 button.btn.tf-btn.btn-default {
-	float: right;
+	
 	background: #FCAC45;
 	border: 0;
 	border-radius: 0;
 	padding: 10px 40px;
 	color: #ffffff;
 	text-transform: uppercase;
+       
 }
 
 .btn:active, .btn.active {
@@ -570,3 +571,13 @@ nav#footer p{
 	border-color: #FCAC45;
 	color: #ffffff;
 }
+div.Adultos_select {
+background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+padding: 2px 5px 6px 16px;
+margin: 5px 0px 0px;
+width: 71px;
+color: rgb(153, 153, 153);
+height: 36px;
+}
+       
+

@@ -55,7 +55,7 @@
     </head>
     <body>
         <script>
-                    var animacionesjs = angular.module('Viajero', [ngAnimate]);
+            var animacionesjs = angular.module('Viajero', [ngAnimate]);
         </script>
 
         <!-- Navigation
@@ -92,23 +92,107 @@
         ==========================================-->
         <div id="tf-home" class="text-center">
             <div class="overlay">
-                <div class="content" ng-controller="controllerProvincias">
+                <div class="content" ng-controller="controllerProvincias" >
+
+                    <form method="post" action="http://www.viajeroreserva.com/disponibilidad/">
+                        <fieldset>
+                            <div class="inputs input-daterange" id="datepicker">
+                                <label>Entrada <br>
+                                    <input class="check_in form-control" name="check_in" placeholder="dd/mm/aaaa" type="date">
+                                    <i class="fa fa-calendar fa-lg" aria-hidden="true"></i>
+                                </label>
+                                <label class="lastinput">Salida <br>
+                                    <input class="check_out form-control" name="check_out" placeholder="dd/mm/aaaa" type="date">
+                                    <i class="fa fa-calendar fa-lg" aria-hidden="true">
+
+                                    </i></label>
+                            </div>
+
+                            <div class="selects">
+                                <label class="habi">Destinos <br>
+                                        <select class="form-group-sm" ng-controller="controllerProvincias"  ng-model="Provincias">
+                                            <option value="0">Pinar del Río</option>
+                                            <option value="1">Artemisa</option>
+                                            <option value="2"selected="selected">La Habana</option>
+                                            <option value="3">Mayabeque</option>
+                                            <option value="4">Matanzas</option>
+                                            <option value="5">Cienfuegos</option>
+                                            <option value="6">Villa Clara</option>
+                                            <option value="7">Sancti Spíritus</option>
+                                            <option value="8">Ciego de Ávila</option>
+
+                                        </select>
+                                </label>
+
+                                <label class="habi">Habitaciones <br><select name="rooms">
+                                        <option selected="selected">1</option>
+                                        <option>2</option>
+                                    </select>
+                                </label>
+                                <label>Adultos<br><select name="adults">
+                                        <option selected="selected" value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>                
+                                    </select></label>
+
+                                <label class="lastselect">Niños<br>
+                                    <select name="children">
+                                        <option selected="selected" value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>                
+
+                                    </select></label>
+                            </div>
+                            <button type="submit"   ng-click="Reservar()" class="btn tf-btn btn-default" >¡Reserve Ya! </button
+
+                        </fieldset>
+                    </form>
+
+                   <!--  <select class="form-group-sm" ng-controller="controllerProvincias"  ng-model="Provincias">
+                            <option value="0">Pinar del Río</option>
+                            <option value="1">Artemisa</option>
+                            <option value="2"selected="selected">La Habana</option>
+                            <option value="3">Mayabeque</option>
+                            <option value="4">Matanzas</option>
+                            <option value="5">Cienfuegos</option>
+                            <option value="6">Villa Clara</option>
+                            <option value="7">Sancti Spíritus</option>
+                            <option value="8">Ciego de Ávila</option>
                     
-                    <input type="text" ng-model="Ubicación"/>
-                    <input type="datetime" ng-model="Desde"/>
-                    <input type="datetime" ng-model="Hasta"/>
-                    <input type="number" ng-model="Adultos"/>
-                    <input type="number" ng-model="Niños"/>
-                    <button type="submit" ng-click="Reservar()" class=" btn-success">¡Reserve Ya!</button>
+                        </select>
+                    <input type="datetime"  placeholder="dd/mm/aaaa" ng-model="Desde"/>
+                    <input type="datetime"  placeholder="dd/mm/aaaa" ng-model="Hasta" style="background-image: url(img/s_lang.png)"/>
+                    <select name="Adultos">
+                       <option selected="selected" value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                    <label>"Niños"
+                        <br>
+                        
+                        <select class="" >
+                        <option selected="selected" value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                       
+                    </select>
+                    </label>
+                    <input type="number"    placeholder="Adultos"min="0" max="6"  ng-model="Adultos"/>
+                    <input type="number"    placeholder="Niños "min="0" max="3" ng-model="Niños"/>-->
+
                     <h1>Bienvenido a <strong><span class="color">Viajero</span></strong></h1>
                     <p class="lead">Somos una agencia de viajes digital <strong>con años de experiencia</strong> y con <strong>personas extraordinarias</strong></p>
                     <a href="#tf-about" class="fa fa-angle-down page-scroll"></a>
 
-                    <ul>
-                        <li ng-repeat="test in provincia">
-                            {{test.nombre}}
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>
