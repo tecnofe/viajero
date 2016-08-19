@@ -516,8 +516,8 @@ label {
 button.btn.tf-btn.btn-default {
 	
 	background: #FCAC45;
-	border: 0;
-	border-radius: 0;
+border: 1px solid #ccc;
+border-radius: 4px;
 	padding: 10px 40px;
 	color: #ffffff;
 	text-transform: uppercase;
@@ -579,5 +579,27 @@ width: 71px;
 color: rgb(153, 153, 153);
 height: 36px;
 }
-       
+
+form{
+    /*display: block;
+    width: 100%;
+    padding: 6px 12px;
+    margin: 0 auto;
+     padding-left: 20px;
+    padding-left: 150px;
+   align-self: center;*/
+}
+
+div#intro{
+    box-sizing: border-box;
+}
+input, select{
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+select.num_sel{
+    width: 80px;
+}
 
