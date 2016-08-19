@@ -136,10 +136,15 @@
                         <div id="intro">
                         <form ng-submit="submit()" class="form-horizontal" novalidate> 
                             <select class="algo" name="country" ng-model="user.country">
-                                <option value="">Seleccione un destino</option>
-                                <option value="US">United States</option>
-                                <option value="GB">United Kingdom</option>
-                                <option value="AU">Australia</option>
+                                <option value="0">Pinar del Río</option>
+                                <option value="1">Artemisa</option>
+                                <option value="2"selected="selected">La Habana</option>
+                                <option value="3">Mayabeque</option>
+                                <option value="4">Matanzas</option>
+                                <option value="5">Cienfuegos</option>
+                                <option value="6">Villa Clara</option>
+                                <option value="7">Sancti Spíritus</option>
+                                <option value="8">Ciego de Ávila</option>
                             </select>
                             <input type="date" name="date1" id="date1" placeholder="ENTRADA">
                             <input type="date" name="date2" id="date2" placeholder="SALIDA">
